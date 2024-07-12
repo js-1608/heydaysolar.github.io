@@ -448,7 +448,7 @@
 				</section>
 				<!-- banner start-->
 				<!-- Our vision start-->
-				<section class="">
+				<!-- <section class="">
 					<div class="element-holder">
 						<div class="container">
 							<div class="row">
@@ -503,8 +503,90 @@
 								
 						</div>
 					</div>
-					</section>
+					</section> -->
 					<!-- our vision end -->
+					<div class="container3">
+						<div class="row">
+							<div class="col-12">
+								<h3 class="element-title">Our Mission</h3>
+							</div>
+						</div>						<div class="mission">
+							<div class="stage" id="grow">
+								<div class="icon-container">
+									<svg class="icon">
+										<use xlink:href="#info"></use>
+									</svg>
+									<!-- <img src="images/grow.png" alt="Grow Icon" class="icon"> -->
+									<div class="progress-bar"></div>
+								</div>
+								<div class="content">
+									<h2>GROW</h2>
+									<p>To grow as the most trusted and coveted solar distribution company through a customer-centric approach and offering customized solutions for every market.</p>
+								</div>
+							</div>
+							<div class="stage" id="lead">
+								<div class="icon-container">
+									<svg class="icon">
+										<use xlink:href="#settings"></use>
+									</svg>
+									<!-- <img src="images/lead.png" alt="Lead Icon" class="icon"> -->
+									<div class="progress-bar"></div>
+								</div>
+								<div class="content">
+									<h2>LEAD</h2>
+									<p>To be a leading solar equipment distributor in the nation, and ensure that our partners receive the latest products and the newest application techniques.</p>
+								</div>
+							</div>
+							<div class="stage" id="ensure">
+								<div class="icon-container">
+									<svg class="icon">
+										<use xlink:href="#user-ic"></use>
+									</svg>
+									<!-- <img src="images/ensure.png" alt="Ensure Icon" class="icon"> -->
+									<div class="progress-bar"></div>
+								</div>
+								<div class="content">
+									<h2>ENSURE</h2>
+									<p>To have a vast national presence allowing to ensuring you and your team always receive superior quality and value.</p>
+								</div>
+							</div>
+							<div class="stage" id="fulfil">
+								<div class="icon-container">
+									<svg class="icon">
+										<use xlink:href="#puzzle"></use>
+									</svg>
+									<!-- <img src="images/fulfil.png" alt="Fulfil Icon" class="icon"> -->
+									<div class="progress-bar"></div>
+								</div>
+								<div class="content">
+									<h2>FULFIL</h2>
+									<p>To be known as one of the most responsible distribution companies in terms of supplying products of the highest quality, bankable products and ensuring total customer fulfillment before and after the purchase of solar equipment.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>
+						document.addEventListener('DOMContentLoaded', function() {
+						const stages = document.querySelectorAll('.stage');
+						const progressBars = document.querySelectorAll('.progress-bar');
+					
+						function revealStages() {
+							stages.forEach((stage, index) => {
+								const stagePosition = stage.getBoundingClientRect().top;
+								const windowHeight = window.innerHeight;
+								if (stagePosition < windowHeight - 50) {
+									stage.classList.add('active');
+									progressBars[index].style.width = '100%';
+								}
+							});
+						}
+					
+						window.addEventListener('scroll', revealStages);
+						revealStages(); // Initial check
+					});
+					
+						</script>	   
+
 				<!-- team start-->
 				<section class="section team">
 					<div class="container">
