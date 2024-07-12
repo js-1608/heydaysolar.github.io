@@ -26168,3 +26168,99 @@ footer.footer--style-3 .copyright {
   display: none !important;
 }
 }
+
+
+
+.container3 {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+	justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.mission {
+    position: relative;
+}
+
+.stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+    margin: 50px 0;
+}
+
+.stage img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    transition: transform 1s ease;
+}
+
+.stage.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stage.active img {
+    transform: rotate(360deg);
+}
+
+h2 {
+    font-size: 2em;
+    color: red;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.icon-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color:red;
+    transition: width 1s ease;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    /* 0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    } */
+}
